@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Drone</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Leonardo Rodrigues">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="script.js"></script>
+    
+  
+  </head>
+  <body id="body">
+<!-- Barra de Nav -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+          <a class="nav-link" href="#body"><input class="navbar-brand" type="image" src="images/logo.png"/></a>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" href="#sound">Serviços</a>
+              <a class="nav-link" href="#team">Nosso Time</a>
+          </div>
+          </div>
+        </div>
+      </nav>
+<!-- Video -->
+    <header>
+      
+      <div class="container h-100">
+        <div class="overlay">
+          <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" id="myVideo">
+            <source src="videos/Drone.mp4" type="video/mp4">
+          </video>
+        </div>
+        
+     </div>
+    </header>
+    <div class="content">
+     
+      <button id="play" class="btn" onclick="playAndPause()"></button>
+      <button id="sound" class="btn" onclick="sound()"></button>
+    </div>
+<!--Animação 2D -->
+      <section  class="my-5">
+      <div class="container h-100">
+        <div class="row align-items-center">
+          <div class="col-sm">
+            <h2>PQ NÃO EU AAA AAA PQ NN EU</h2>
+            <p>The HTML5 video element uses an mp4 video as a source. Change the source video to add in your own background! The header text is vertically centered using flex utilities that are build into Bootstrap 4.</p>
+            <p>The overlay color can be changed by changing the <code>background-color</code> of the <code>.overlay</code> class in the CSS.</p>
+            <p>Set the mobile fallback image in the CSS by changing the background image of the header element within the media query at the bottom of the CSS snippet.</p>
+            <p class="mb-0">
+              Created by <a href="https://startbootstrap.com">Start Bootstrap</a>
+            </p>
+            <p>The HTML5 video element uses an mp4 video as a source. Change the source video to add in your own background! The header text is vertically centered using flex utilities that are build into Bootstrap 4.</p>
+            <p>The overlay color can be changed by changing the <code>background-color</code> of the <code>.overlay</code> class in the CSS.</p>
+            <p>Set the mobile fallback image in the CSS by changing the background image of the header element within the media query at the bottom of the CSS snippet.</p>
+            <p>Set the mobile fallback image in the CSS by changing the background image of the header element within the media query at the bottom of the CSS snippet.</p>
+           
+          </div>
+          
+          <div class="col-lg mx-auto">
+            <div class="overlay">
+              <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" id="myAnimation">
+                <source src="videos/2D.mp4" type="video/mp4">
+              </video>
+            </div>
+          
+            <div class="content2">
+              <button id="play2" class="btn" onclick="playAndPause2()"></button>
+              <button id="sound2" class="btn" onclick="sound2()"></button>
+            </div>
+          </div>
+         </div>
+      </div>
+     
+    </section>
+
+<div id=team style="height: 70px"></div>
+
+<!-- O time -->
+    <section id="about" class="my-5">
+      <div id="time" class="d-flex flex-column justify-content-center align-items-center">
+        <h2 > Nosso Time</h2>
+      </div>
+    </section>  
+
+    <section class="my-5">
+      <div  class="container h-100">
+        
+        
+        <div class="row align-items-center">
+          <p>here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc. </p>
+          <div class="col-sm">
+            <img src="images/Eu.png" class="img-fluid" alt="Responsive image">
+          </div>
+          
+          <div class="col-lg mx-auto">
+           
+          
+          </div>
+         </div>
+      </div>
+    </section>
+<!-- Footer -->
+        
+        <div class="text-center align-middle text-white bg-dark" style="height: 80px;">
+         <p style="padding-top: 20px;">© 2021 Copyright: Leonardo Rodrigues </p> 
+        </div>
+ 
+  </body> 
+
+  
+  

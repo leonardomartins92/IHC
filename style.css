@@ -1,0 +1,94 @@
+header {
+    position: relative;
+    background-color: black;
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+  }
+  
+  @media (pointer: coarse) and (hover: none) {
+    header {
+      background: url('videos/Drone.mp4') black no-repeat center center scroll;
+    }
+    header video {
+      display: none;
+    }
+  }
+
+  #myAnimation{
+    height: 100%;
+    width: 100%;
+    padding-bottom: 0%;
+  }
+
+  .content {
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .content2 {
+    width: 100%;
+  }
+  
+  /* Style the button used to pause/play the video */
+  .btn{
+    border: none;
+    cursor: pointer;
+   
+  }
+  .btn:hover{
+    opacity:0.7;
+  }
+  
+  #play {
+    background: url('images/pause.png') scroll ;
+    width: 67px;
+    padding: 20px;
+       
+  }
+   
+  #sound {
+    background: url('images/on.png') ;
+    width: 67px;
+    padding: 20px;
+  }
+
+  #play2 {
+    background: url('images/pause2.png') scroll ;
+    width: 30px;
+    height: 30px;
+       
+  }
+   
+  #sound2 {
+    background: url('images/on2.png') ;
+    width: 30px;
+    height: 30px;
+  }
+
+  #about{
+    background-color:#5dbab3;
+  }
+
+  #time{
+    color: #f1f1f1;
+    height: 80px;
+    width: 100%;
+    
+  }
+  
+  body { padding-top: 80px; }
