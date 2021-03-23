@@ -1,114 +1,183 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <title>Drone</title>
-    <meta charset="utf-8">
-    <meta name="author" content="Leonardo Rodrigues">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <script src="script.js"></script>
-    
-  
-  </head>
-  <body id="body">
-<!-- Barra de Nav -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <div class="container-fluid">
-          <a class="nav-link" href="#body"><input class="navbar-brand" type="image" src="images/logo.png"/></a>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link" href="#sound">Serviços</a>
-              <a class="nav-link" href="#team">Nosso Time</a>
-          </div>
-          </div>
+
+<head>
+  <title>Drone</title>
+  <meta charset="utf-8">
+  <meta name="author" content="Leonardo Rodrigues">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <script src="script.js"></script>
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Orienta&display=swap" rel="stylesheet">
+</head>
+
+<body id="body">
+  <!-- Barra de Nav -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+      <a class="nav-link" href="#body"><input class="navbar-brand" type="image" src="images/logo.png" /></a>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" href="#sobreNos">Sobre Nós</a>
+          <a class="nav-link" href="#servicos">Serviços</a>
+          <a class="nav-link" href="#team">Nosso Time</a>
         </div>
-      </nav>
-<!-- Video -->
-    <header>
-      
-      <div class="container h-100">
-        <div class="overlay">
-          <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" id="myVideo">
-            <source src="videos/Drone.mp4" type="video/mp4">
-          </video>
-        </div>
-        
-     </div>
-    </header>
-    <div class="content">
-     
-      <button id="play" class="btn" onclick="playAndPause()"></button>
-      <button id="sound" class="btn" onclick="sound()"></button>
+      </div>
     </div>
-<!--Animação 2D -->
-      <section  class="my-5">
-      <div class="container h-100">
-        <div class="row align-items-center">
-          <div class="col-sm">
-            <h2>PQ NÃO EU AAA AAA PQ NN EU</h2>
-            <p>The HTML5 video element uses an mp4 video as a source. Change the source video to add in your own background! The header text is vertically centered using flex utilities that are build into Bootstrap 4.</p>
-            <p>The overlay color can be changed by changing the <code>background-color</code> of the <code>.overlay</code> class in the CSS.</p>
-            <p>Set the mobile fallback image in the CSS by changing the background image of the header element within the media query at the bottom of the CSS snippet.</p>
-            <p class="mb-0">
-              Created by <a href="https://startbootstrap.com">Start Bootstrap</a>
-            </p>
-            <p>The HTML5 video element uses an mp4 video as a source. Change the source video to add in your own background! The header text is vertically centered using flex utilities that are build into Bootstrap 4.</p>
-            <p>The overlay color can be changed by changing the <code>background-color</code> of the <code>.overlay</code> class in the CSS.</p>
-            <p>Set the mobile fallback image in the CSS by changing the background image of the header element within the media query at the bottom of the CSS snippet.</p>
-            <p>Set the mobile fallback image in the CSS by changing the background image of the header element within the media query at the bottom of the CSS snippet.</p>
-           
-          </div>
-          
-          <div class="col-lg mx-auto">
-            <div class="overlay">
-              <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" id="myAnimation">
-                <source src="videos/2D.mp4" type="video/mp4">
-              </video>
-            </div>
-          
-            <div class="content2">
-              <button id="play2" class="btn" onclick="playAndPause2()"></button>
-              <button id="sound2" class="btn" onclick="sound2()"></button>
-            </div>
-          </div>
-         </div>
-      </div>
-     
-    </section>
+  </nav>
+  <!-- Video -->
+  <header>
 
-<div id=team style="height: 70px"></div>
-
-<!-- O time -->
-    <section id="about" class="my-5">
-      <div id="time" class="d-flex flex-column justify-content-center align-items-center">
-        <h2 > Nosso Time</h2>
+    <div class="container h-100">
+      <div class="overlay">
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" id="myVideo">
+          <source src="videos/Drone.mp4" type="video/mp4">
+        </video>
       </div>
-    </section>  
 
-    <section class="my-5">
-      <div  class="container h-100">
-        
-        
-        <div class="row align-items-center">
-          <p>here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc. </p>
-          <div class="col-sm">
-            <img src="images/Eu.png" class="img-fluid" alt="Responsive image">
-          </div>
-          
-          <div class="col-lg mx-auto">
-           
-          
-          </div>
-         </div>
-      </div>
-    </section>
-<!-- Footer -->
-        
-        <div class="text-center align-middle text-white bg-dark" style="height: 80px;">
-         <p style="padding-top: 20px;">© 2021 Copyright: Leonardo Rodrigues </p> 
+    </div>
+  </header>
+  <div class="content">
+
+    <button id="play" class="btn" onclick="playAndPause()"></button>
+    <button id="sound" class="btn" onclick="sound()"></button>
+  </div>
+  <div id="sobreNos" style="height:70px"></div>
+  <!--Animação 2D -->
+  <section class="my-5">
+    
+    <div class="container h-100">
+
+      <div class="row align-items-center">
+        <div class="col">
+          <h2 class="titulo">Quem Somos?</h2><br>
+          <p class="about">Somos uma empresa focada na captação, produção e edição
+            de imagens aéreas, mapeamento aéreo com drones e vistoria, avaliação e perícia de engenharia.
+            Temos como valores a excelência, criatividade e inovação.</p>
+
         </div>
- 
-  </body> 
 
-  
-  
+        <div class="col-8">
+          <div class="overlay">
+            <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" id="myAnimation">
+              <source src="videos/2D.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div class="content2">
+            <button id="play2" class="btn" onclick="playAndPause2()"></button>
+            <button id="sound2" class="btn" onclick="sound2()"></button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <div id="servicos" style="height: 70px"></div>
+
+  <!--Cidade -->
+  <div class="container h-100">
+    <div class="row align-items-center">
+      <div class="col-8">
+        <img class="img" src="images/matt-jones-9CPAjGVB378-unsplash.jpg" alt="city">
+      </div>
+      <div class="col">
+        <h3 class="titulo">Imobiliário</h3>
+        <p class="texto">Podemos mostrar seu empreendimento Imobiliário por todos os ângulos</p>
+      </div>
+
+    </div>
+    <!--Industria -->
+    <div class="row align-items-center">
+      <div class="col">
+        <h3 class="titulo">Indústria</h3>
+        <p class="texto">Filmagens e inspeções em ambientes industriais, inclusive aqueles de difícil acesso</p>
+      </div>
+      <div class="col-8">
+        <img class="img" src="images/jamie-street--7ip4yX5P6Q-unsplash.jpg" alt="city">
+      </div>
+
+    </div>
+
+    <!--Turismo -->
+    <div class="row align-items-center">
+      <div class="col-8">
+        <img class="img" src="images/melissa-AWh9C-QjhE4-unsplash.jpg" alt="city">
+      </div>
+      <div class="col">
+        <h3 class="titulo">Turismo</h3>
+        <p class="texto">Podemos ir a vários lugares e em ângulos variados para criar recordações e materiais turísticos
+        </p>
+      </div>
+
+    </div>
+    <!--Fazenda -->
+    <div class="row align-items-center">
+      <div class="col">
+        <h3 class="titulo">Campo</h3>
+        <p class="texto">Sobrevoamos campos e fazendas com diferentes sensores para analisar a saúde das plantações
+          e verificar os animais.</p>
+      </div>
+      <div class="col-8">
+        <img class="img" src="images/dan-meyers-IQVFVH0ajag-unsplash.jpg" alt="city">
+      </div>
+
+    </div>
+  </div>
+
+  </section>
+
+  <div id="team" style="height: 70px"></div>
+
+  <!-- O time -->
+  <section id="about" class="my-5">
+    <div id="time" class="d-flex flex-column justify-content-center align-items-center">
+      <h2 class="titulo2"> Nosso Time</h2>
+    </div>
+ 
+    <div class="container h-100">
+      <div class="row align-items-center justify-content-center">
+        <p class="ourteam">Contamos com um grupo de criativos qualificados!
+          A equipe da Mídia no Drone sempre entrega essa perspectiva cinematográfica elevada com facilidade.
+          Colocaremos lá em cima o seu marketing e publicidade.
+          <p class="ourteam" style="font-size:22px; text-align: end;">Amamos nosso trabalho! </p>
+        </p>
+        
+    <br>
+      </div>
+        <div class="row align-items-center justify-content-center">
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="images/eu2.png" alt="Leonardo">
+            <div class="card-body" style="background-color:#e9e4d0;">
+              <h2 class="texto">Leonardo Rodrigues</h2>
+              <p class="card-text">CEO, Piloto de drone e fotógrafo</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="images/fab2.png" alt="Fabricio">
+            <div class="card-body" style="background-color:#e9e4d0;">
+              <h2 class="texto">Fabrício Lima</h2>
+              <p class="card-text">CTO, Editor de Imagens e Vídeos</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div style="height: 40px;"></div>
+  </section>
+  <!-- Footer -->
+
+  <div class="text-center align-middle text-white bg-dark" style="height: 80px; padding-top: 0px;">
+    <p style="padding-top: 20px;">© 2021 Copyright: Mídia no Drone </p>
+  </div>
+
+</body>
