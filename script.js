@@ -17,12 +17,12 @@ function sound() {
     var btn2 = document.getElementById("sound2");
   if (video.muted) {
     video.muted = false;
-    btn.style.background = "url('images/off.png')";
+    btn.style.background = "url('images/on.png')";
     animation.muted = true;
-    btn2.style.background = "url('images/on2.png')";
+    btn2.style.background = "url('images/off2.png')";
   } else {
     video.muted = true;
-    btn.style.background = "url('images/on.png')";
+    btn.style.background = "url('images/off.png')";
   }
 }
 
@@ -47,11 +47,11 @@ function sound2() {
 
 if (animation.muted) {
   animation.muted = false;
-  btn2.style.background = "url('images/off2.png')";
+  btn2.style.background = "url('images/on2.png')";
   video.muted = true;
-  btn.style.background = "url('images/on.png')";
+  btn.style.background = "url('images/off.png')";
 } else {
   animation.muted = true;
-  btn2.style.background = "url('images/on2.png')";
+  btn2.style.background = "url('images/off2.png')";
 }
 }

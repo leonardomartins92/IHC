@@ -62,7 +62,7 @@ header {
   }
    
   #sound {
-    background: url('images/on.png') ;
+    background: url('images/off.png') ;
     width: 67px;
     padding: 20px;
   }
@@ -75,7 +75,7 @@ header {
   }
    
   #sound2 {
-    background: url('images/on2.png') ;
+    background: url('images/off2.png') ;
     width: 30px;
     height: 30px;
   }
