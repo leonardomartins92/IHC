@@ -55,3 +55,4 @@ if (animation.muted) {
   btn2.style.background = "url('images/off2.png')";
 }
 }
+

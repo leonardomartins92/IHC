@@ -81,7 +81,7 @@ header {
   }
 
   #about{
-    background-color:#85d3cd;
+    background-color:#64afa9;
   }
 
   #time{
@@ -129,4 +129,19 @@ header {
     text-align:justify;
     color: rgb(255, 255, 255);
   }
+
+  .portifolio{
+    height: 400px;
+    width: 100%;
+  }
  
+  #footer{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+  }
+
+  #footer a{
+    color: rgb(255, 255, 255);
+  }
